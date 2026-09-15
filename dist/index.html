@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ROVIA — quiet form, lasting character. 2026 collection." />
+  <title>ROVIA — 2026 Collection</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090a0c'/%3E%3Cpath d='M18 18h16c8 0 13 4 13 11 0 5-3 8-7 10l9 10H37L29 39v10H18V18zm11 9v5h5c2 0 3-1 3-3s-1-2-3-2h-5z' fill='%23f3f0e9'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div><div class="cursor-glow" aria-hidden="true"></div>
+  <header class="nav glass">
+    <a class="wordmark" href="#top" aria-label="ROVIA トップ">ROVIA<span>®</span></a>
+    <nav aria-label="メインナビゲーション">
+      <a href="#collection">Collection</a><a href="#story">Our code</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="soundToggle" aria-label="環境音を切り替える"><span class="sound-bars"><i></i><i></i><i></i></span></button>
+      <button class="bag-btn" id="openCart" aria-label="バッグを開く">Bag <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> ROVIA / COLLECTION 2026</p>
+        <h1 id="hero-title">Quiet form.<br><em>Lasting character.</em></h1>
+        <p class="hero-note">日常の余白に、静かな個性を。<br>着るほどに育つ、ROVIAのニュースタンダード。</p>
+        <a class="primary-cta magnetic" href="#collection">コレクションを見る <span>↘</span></a>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-card tilt-card">
+          <div class="product-crop hero-product p-03"></div>
+          <div class="hero-card-meta"><span>03 / COLLEGIATE</span><span>NEW</span></div>
+        </div>
+        <div class="floating-pill pill-a glass">Premium cotton<br><strong>240 GSM</strong></div>
+        <div class="floating-pill pill-b glass"><span class="pulse"></span> Designed in Japan</div>
+      </div>
+      <div class="scroll-cue"><span>SCROLL TO EXPLORE</span><i></i></div>
+    </section>
+
+    <section class="marquee" aria-label="ブランドメッセージ"><div>ESSENTIAL FORMS&nbsp; ✦ &nbsp;TACTILE DAYS&nbsp; ✦ &nbsp;QUIET EXPRESSION&nbsp; ✦ &nbsp;ESSENTIAL FORMS&nbsp; ✦ &nbsp;TACTILE DAYS&nbsp; ✦ &nbsp;QUIET EXPRESSION&nbsp; ✦</div></section>
+
+    <section class="collection section" id="collection" aria-labelledby="collection-title">
+      <div class="section-head reveal"><div><p class="eyebrow">SELECTED PIECES</p><h2 id="collection-title">Find your form.</h2></div><p>輪郭、質感、色。気分に合う一着を選ぶ。</p></div>
+      <div class="filter-row reveal" role="group" aria-label="商品フィルター">
+        <button class="filter active" data-filter="all">All <sup>08</sup></button>
+        <button class="filter" data-filter="light">Light <sup>04</sup></button>
+        <button class="filter" data-filter="dark">Dark <sup>04</sup></button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="feature section" id="story">
+      <div class="feature-stage reveal">
+        <div class="feature-image"><div class="product-crop p-36"></div><span class="index">/ 036</span></div>
+        <div class="feature-copy glass">
+          <p class="eyebrow">THE ROVIA CODE</p>
+          <h2>Wear the<br><em>in-between.</em></h2>
+          <p>飾りすぎない。削りすぎない。素材の表情と、少しだけ意外な配置。その間に生まれる心地よさをかたちにします。</p>
+          <div class="specs"><div><span>01</span><strong>HEAVYWEIGHT</strong><small>形を保つ密度</small></div><div><span>02</span><strong>GARMENT DYED</strong><small>一枚ごとの表情</small></div><div><span>03</span><strong>RELAXED FIT</strong><small>動ける余白</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section reveal">
+      <p class="eyebrow">SAME PASTURES / DIFFERENT DAYS</p>
+      <h2>Make room<br>for <em>your day.</em></h2>
+      <a class="primary-cta light magnetic" href="#collection">Shop the collection <span>↑</span></a>
+      <div class="closing-orb"></div>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#top">ROVIA</a><p>For a quieter, brighter tomorrow.</p><div><a href="#">Instagram</a><a href="#">Terms</a><span>© 2026</span></div></footer>
+
+  <aside class="cart glass" id="cart" aria-hidden="true" aria-labelledby="cartTitle">
+    <div class="cart-head"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cartTitle">Bag <span id="cartTitleCount">0</span></h2></div><button class="close" id="closeCart" aria-label="バッグを閉じる">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart"><span>○</span><p>バッグは空です。</p><small>気になる一着を見つけてください。</small></div></div>
+    <div class="cart-bottom" id="cartBottom"><div><span>Subtotal</span><strong id="subtotal">¥0</strong></div><button class="checkout" id="checkout">購入手続きへ <span>→</span></button><small>※ デモサイトのため、実際の決済は行われません。</small></div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <dialog class="quick-view" id="quickView">
+    <button class="close modal-close" aria-label="閉じる">×</button>
+    <div class="modal-image"><div class="product-crop" id="modalCrop"></div></div>
+    <div class="modal-info"><p class="eyebrow" id="modalIndex">PIECE 01</p><h2 id="modalName">Ringer Tee</h2><p class="price" id="modalPrice">¥8,800</p><p class="description">長く着るほど風合いが深まる、ゆとりのあるボックスシルエット。細部まで静かに主張する一着です。</p><div class="option"><label>Color</label><div id="colors"></div></div><div class="option"><label for="sizeSelect">Size</label><select id="sizeSelect"><option>S</option><option selected>M</option><option>L</option><option>XL</option></select></div><button class="checkout add-modal">バッグに追加 <span>＋</span></button></div>
+  </dialog>
+  <div class="toast" id="toast" role="status">バッグに追加しました</div>
+  <script src="script.js"></script>
+</body>
+</html>
