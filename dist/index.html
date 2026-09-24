@@ -12,53 +12,30 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="noise"></div><div class="cursor-glow" aria-hidden="true"></div>
   <header class="nav glass">
-    <a class="wordmark" href="#top" aria-label="ROVIA トップ">ROVIA<span>®</span></a>
-    <nav aria-label="メインナビゲーション">
-      <a href="#collection">Collection</a><a href="#story">Our code</a>
-    </nav>
+    <a class="brand-lockup" href="#top" aria-label="ROVIA トップ">
+      <img src="assets/rovia-logo.png" alt="" />
+      <span class="wordmark">ROVIA</span>
+    </a>
     <div class="nav-actions">
-      <button class="icon-btn" id="soundToggle" aria-label="環境音を切り替える"><span class="sound-bars"><i></i><i></i><i></i></span></button>
       <button class="bag-btn" id="openCart" aria-label="バッグを開く">Bag <span id="cartCount">0</span></button>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="orb orb-one"></div><div class="orb orb-two"></div>
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> ROVIA / COLLECTION 2026</p>
-        <h1 id="hero-title">Quiet form.<br><em>Lasting character.</em></h1>
-        <p class="hero-note">日常の余白に、静かな個性を。<br>着るほどに育つ、ROVIAのニュースタンダード。</p>
-        <a class="primary-cta magnetic" href="#collection">コレクションを見る <span>↘</span></a>
-      </div>
-      <div class="hero-visual reveal">
-        <div class="hero-card tilt-card">
-          <div class="product-crop hero-product p-03"></div>
-          <div class="hero-card-meta"><span>03 / COLLEGIATE</span><span>NEW</span></div>
-        </div>
-        <div class="floating-pill pill-a glass">Premium cotton<br><strong>240 GSM</strong></div>
-        <div class="floating-pill pill-b glass"><span class="pulse"></span> Designed in Japan</div>
-      </div>
-      <div class="scroll-cue"><span>SCROLL TO EXPLORE</span><i></i></div>
-    </section>
-
-    <section class="marquee" aria-label="ブランドメッセージ"><div>ESSENTIAL FORMS&nbsp; ✦ &nbsp;TACTILE DAYS&nbsp; ✦ &nbsp;QUIET EXPRESSION&nbsp; ✦ &nbsp;ESSENTIAL FORMS&nbsp; ✦ &nbsp;TACTILE DAYS&nbsp; ✦ &nbsp;QUIET EXPRESSION&nbsp; ✦</div></section>
-
     <section class="collection section" id="collection" aria-labelledby="collection-title">
       <div class="section-head reveal"><div><p class="eyebrow">SELECTED PIECES</p><h2 id="collection-title">Find your form.</h2></div><p>輪郭、質感、色。気分に合う一着を選ぶ。</p></div>
       <div class="filter-row reveal" role="group" aria-label="商品フィルター">
-        <button class="filter active" data-filter="all">All <sup>08</sup></button>
-        <button class="filter" data-filter="light">Light <sup>04</sup></button>
-        <button class="filter" data-filter="dark">Dark <sup>04</sup></button>
+        <button class="filter active" data-filter="all">All <sup>04</sup></button>
+        <button class="filter" data-filter="light">Light <sup>03</sup></button>
+        <button class="filter" data-filter="dark">Dark <sup>01</sup></button>
       </div>
       <div class="product-grid" id="productGrid"></div>
     </section>
 
     <section class="feature section" id="story">
       <div class="feature-stage reveal">
-        <div class="feature-image"><div class="product-crop p-36"></div><span class="index">/ 036</span></div>
+        <div class="feature-image"><img class="model-editorial" src="assets/natsuki-rovia-tee-01.png" alt="ROVIAのワンポイントTシャツを着用したモデル" /><span class="index">ROVIA / 001</span><span class="model-note">着用イメージ / AI生成</span></div>
         <div class="feature-copy glass">
           <p class="eyebrow">THE ROVIA CODE</p>
           <h2>Wear the<br><em>in-between.</em></h2>
